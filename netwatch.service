@@ -1,0 +1,14 @@
+[Unit]
+Description=NetWatch internet usage collector
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/lib/netwatch/netwatch_backend.py --no-open --no-quit --data /var/lib/netwatch/usage.json
+Restart=always
+RestartSec=3
+StateDirectory=netwatch
+ProtectSystem=full
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target

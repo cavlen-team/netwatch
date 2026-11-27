@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=NetWatch
+Name[ar]=مراقب النت
+Comment=استهلاك النت لكل برنامج ولكل موقع
+Exec=netwatch
+Icon=netwatch
+Categories=Network;Monitor;
+Terminal=false
+StartupWMClass=netwatch
